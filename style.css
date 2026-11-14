@@ -811,3 +811,41 @@ section {
     color: #cfcfcf;
 
 }
+
+/* ================= CERTIFICATIONS ================= */
+#certifications {
+    padding: 60px 20px 70px;
+    background: #0f0f0f;
+    scroll-margin-top: 80px;
+}
+
+.cert-list {
+    max-width: 700px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cert-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    border: 1px solid #fbbf24;
+    border-radius: 10px;
+    color: #fbbf24;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cert-link:hover {
+    background: #fbbf24;
+    color: #111;
+}
+
+.cert-view {
+    font-size: 15px;
+    opacity: 0.85;
+}
