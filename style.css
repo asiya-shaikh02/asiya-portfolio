@@ -899,3 +899,36 @@ section {
     font-size: 15px;
     opacity: 0.85;
 }
+
+/* ================= EXPERIENCE CARD LAYOUT FIX ================= */
+/* Keep all four experience cards in one row on wide screens. */
+.experience {
+    padding: 30px 3%;
+}
+
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    min-width: 0;
+    padding: 24px 20px;
+}
+
+@media (max-width: 1100px) {
+    .experience-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .experience-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
